@@ -83,7 +83,8 @@ Figure 1: disable DPU for supermicro/nvidia server with DPU NIC card e.g bluefie
               ; EDNS: version: 0, flags:; udp: 1232
               ; COOKIE: bcf5324c8189920c01000000677707b7885865226f134e25 (good)
               ;; QUESTION SECTION:
-              ;api.supermicro.xxx.yyy.zzz.net. IN A
+              ;api.supermicro.xxx.yyy.zzz.net. IN A![Create cluster](https://github.com/user-attachments/assets/21374bd0-60a2-4d95-a509-19c3bd5ad251)
+
               
               ;; ANSWER SECTION:
               api.supermicro.xxx.yyy.zzz.net. 3600 IN A 10.104.xxx.yyy  -> 10.104.xxx.yyy is the infra IP
@@ -96,3 +97,46 @@ Figure 1: disable DPU for supermicro/nvidia server with DPU NIC card e.g bluefie
        d. NTP server
           ping IP is reachable
 
+   #**2.3 Generate the ISO image with paramters configuration**
+   
+   a. login the https://console.redhat.com/openshift/cluster-list.
+   
+   b. click "Create cluster" button to trigger cluster creation. see figure 2.
+       ![Create cluster](https://github.com/user-attachments/assets/85bcfd7f-c78d-4d95-9072-b2d88e2f6c74)
+       ![Datacenter](https://github.com/user-attachments/assets/65cb8978-9237-4371-a9b7-f75407c0604d)
+
+   c. configure "cluster detail".
+
+   ![ClusterDetail](https://github.com/user-attachments/assets/22784744-73e1-4c56-8e20-dc2c4c975a98)
+
+   d. configure "Static network"
+   
+   ![static-network](https://github.com/user-attachments/assets/1f6b6a82-fd17-422b-82b1-b95ed7445f91)
+
+   e. select the default operator
+    checkout the lvms operator
+   ![default operator](https://github.com/user-attachments/assets/a87c577c-0158-4a98-bbcd-d52f5f390de2)
+
+   f. add host
+   
+   ![Addhost](https://github.com/user-attachments/assets/a2ca2b81-dd56-43fc-b1fe-468c8606c38a)
+
+   g. configure host
+      configure the public key and proxy information, and then generate the iso
+   ![configure-host](https://github.com/user-attachments/assets/4a722fb5-593e-4287-b67f-af6401f8e31d)
+
+
+   f. download the iso and save it to local
+
+   ![download image](https://github.com/user-attachments/assets/cb38e0b6-ef33-4c8e-8a47-1aa92c725850)
+
+
+
+# **3. mount the iso to target server via BMC GUI**
+#**3.1 login the BMC network**
+
+
+
+      
+
+   
