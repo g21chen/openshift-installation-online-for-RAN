@@ -184,6 +184,7 @@ After OCP installation is completed, download the kubeconfig file and also crede
 ### **5. openshift container platform postconfiguration**
 a. performance profile.
    operformance profile is used to adjust the CPU, memory, hugepage configuration. note: configuration are specfic to the CPU models and server itself. e.g X86 and ARM are different. two different types examples are attached.
+   execute the artifacts in /src/
 
 b. drivers
    the kernel drivers depends on the requirement from container based applications. 
@@ -213,6 +214,8 @@ l. Nvidia-gpu operators
 
 ## **6 Reference**
 1. https://docs.openshift.com/container-platform/4.16/installing/overview/index.html
+2. Performance profile. https://docs.openshift.com/container-platform/4.16/scalability_and_performance/low_latency_tuning/cnf-tuning-low-latency-nodes-with-perf-profile.html
+3. 
       
 
    
