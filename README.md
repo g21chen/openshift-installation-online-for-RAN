@@ -1,8 +1,8 @@
 # Table of Contents
 - [Descriptions](#Descriptions)
 - [Preconditions](#Preconditions)
-- [Hardware](#Hardware)
-- [Others](#Others)
+  - [Hardware](#Hardware)
+  - [Others](#Others)
 - [Installation steps](Installation-steps)
 - [1 BIOS configuration](#1-BIOS-configuration)
 - [2 Generate redhat discovery ISO file](#2-Generate redhat discovery ISO file)
