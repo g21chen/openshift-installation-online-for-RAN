@@ -1,6 +1,26 @@
 # openshift-installation-online-for-RAN
 Install the openshift online
 
+# Table of Contents
+- [Descriptions](Descriptions)
+- [Preconditions](Preconditions)
+- [Hardware](#Hardware)
+- [Others](#Others)
+- [Installation steps](Installation steps)
+- [1. BIOS configuration](#1. BIOS configuration)
+- [2. Generate redhat discovery ISO file](#2. Generate redhat discovery ISO file)
+- [2.1 preparing for the following configuration information](##2.1 preparing for the following configuration information)
+- [2.2 precheck the condition for openshift container platform installtion](##2.2 precheck the condition for openshift container platform installtion)
+- [2.3 Generate the ISO image with paramters configuration](##2.3 Generate the ISO image with paramters configuration)
+- [3. mount the iso to target server via BMC GUI](#3. mount the iso to target server via BMC GUI)
+- [3.1 login the BMC network](##3.1 login the BMC network)
+- [3.2 configure server boot from CD/DVD Drive](##3.2 configure server boot from CD/DVD Drive)
+- [3.3 mount iso file](##3.3 mount iso file)
+- [3.4 reset server](##3.4 reset server)
+- [4. openshift container platform installation](#4. openshift container platform installation)
+- [4.1 host is detected from redhat console GUI](##4.1 host is detected from redhat console GUI)
+- [4.2 install OCP](##4.2 install OCP)
+- [5. openshift container platform postconfiguration](#5. openshift container platform postconfiguration)
 
 # **Descriptions**
 The purpose of this repsosity is to specify the openshift installation online and also the operators configuration.  Note: all vendor specific information and configuration will be hidden due to license/privacy rule. 
@@ -8,11 +28,11 @@ The redhat document provide the full installation guide as well. this repository
 
 
 # **Preconditions**
-  ## Hardware 
+  ## **Hardware** 
       1. target HPE DL110 or Dell server or Supermicro or Nvidia server (X86 or ARM CPU model)
       2. Jump server (optional)
 
-  ## Others
+  ## **Others**
       1. Internet access via proxy
       2. redhat account
       
@@ -136,7 +156,7 @@ Figure 1: disable DPU for supermicro/nvidia server with DPU NIC card e.g bluefie
 
 ![ILO BMC](https://github.com/user-attachments/assets/db3b4aea-de43-45e5-9b1e-248b37d29b53)
 
-### **3.2 configure server boot from CD/DVD Drive
+### **3.2 configure server boot from CD/DVD Drive**
 
 ![BOOT-FROM-CD](https://github.com/user-attachments/assets/4cc29f5d-c3bc-4efe-9e11-e4cfae913255)
 
