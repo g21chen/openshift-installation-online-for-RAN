@@ -1,0 +1,44 @@
+items:
+- apiVersion: ptp.openshift.io/v1
+  kind: PtpConfig
+  metadata:
+    name: ptp-config
+    namespace: openshift-ptp
+  spec:
+    profile:
+    - interface: enP2s2f0np0
+      name: ptp-profile
+      phc2sysOpts: -n 24 -i enP2s2f0np0 -R 1 -a -r
+      ptp4lConf: |
+        [global]
+        twoStepFlag                    1
+        slaveOnly                      1
+        masterOnly                     0
+        domainNumber                   24
+        dataset_comparison             G.8275.x
+        G.8275.defaultDS.localPriority 128
+        logAnnounceInterval            -3
+        logSyncInterval                -4
+        logMinDelayReqInterval         -4
+        announceReceiptTimeout         30
+        G.8275.portDS.localPriority    128
+        maxStepsRemoved                255
+        tx_timestamp_timeout      1000
+        sanity_freq_limit         0
+        summary_interval          -4
+        ptp_dst_mac        01:1B:19:00:00:00
+        p2p_dst_mac        01:80:C2:00:00:0E
+        uds_address        /var/run/ptp4l
+        network_transport    L2
+        time_stamping        hardware
+        step_threshold 2
+        first_step_threshold 0.00002
+      ptp4lOpts: -2 -s
+    recommend:
+    - match:
+      - nodeLabel: node-role.kubernetes.io/worker
+      priority: 10
+      profile: ptp-profile
+kind: List
+metadata:
+  resourceVersion: ""
