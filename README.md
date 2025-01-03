@@ -9,15 +9,15 @@
     - [2.1 preparing for the following configuration information](#21-preparing-for-the-following-configuration-information)
     - [2.2 precheck the condition for openshift container platform installtion](#22-precheck-the-condition-for-openshift-container-platform-installtion)
     - [2.3 Generate the ISO image with paramters configuration](#23-Generate-the-ISO-image-with-paramters-configuration)
-  - [3. mount the iso to target server via BMC GUI](#3. mount the iso to target server via BMC GUI)
-    - [3.1 login the BMC network](##3.1 login the BMC network)
-    - [3.2 configure server boot from CD/DVD Drive](##3.2 configure server boot from CD/DVD Drive)
-    - [3.3 mount iso file](##3.3 mount iso file)
-    - [3.4 reset server](##3.4 reset server)
-  - [4. openshift container platform installation](#4. openshift container platform installation)
-    - [4.1 host is detected from redhat console GUI](##4.1 host is detected from redhat console GUI)
-    - [4.2 install OCP](##4.2 install OCP)
-  - [5. openshift container platform postconfiguration](#5. openshift container platform postconfiguration)
+  - [3. mount the iso to target server via BMC GUI](#3-mount-the-iso-to-target-server-via-BMC-GUI)
+    - [3.1 login the BMC network](#31-login-the-BMC-network)
+    - [3.2 configure server boot from CD/DVD Drive](#32-configure-server-boot-from-CDDVD-Drive)
+    - [3.3 mount iso file](#33-mount-iso-file)
+    - [3.4 reset server](#34-reset-server)
+  - [4. openshift container platform installation](#4-openshift-container-platform-installation)
+    - [4.1 host is detected from redhat console GUI](#41-host-is-detected-from-redhat-console-GUI)
+    - [4.2 install OCP](#42-install-OCP)
+  - [5. openshift container platform postconfiguration](#5-openshift-container-platform-postconfiguration)
 
 ## **Descriptions**
 The purpose of this repsosity is to specify the openshift installation online and also the operators configuration.  Note: all vendor specific information and configuration will be hidden due to license/privacy rule. 
@@ -148,21 +148,21 @@ Figure 1: disable DPU for supermicro/nvidia server with DPU NIC card e.g bluefie
 
 
 
-## **3. mount the iso to target server via BMC GUI**
-### **3.1 login the BMC network**
+### **3. mount the iso to target server via BMC GUI**
+#### **3.1 login the BMC network**
 
 ![ILO BMC](https://github.com/user-attachments/assets/db3b4aea-de43-45e5-9b1e-248b37d29b53)
 
-### **3.2 configure server boot from CD/DVD Drive**
+#### **3.2 configure server boot from CD/DVD Drive**
 
 ![BOOT-FROM-CD](https://github.com/user-attachments/assets/4cc29f5d-c3bc-4efe-9e11-e4cfae913255)
 
 
-### **3.3 mount iso file**
+#### **3.3 mount iso file**
 
 ![mount iso](https://github.com/user-attachments/assets/b61635a1-afcd-4ac9-97be-7a2e062e1556)
 
-### **3.4 reset server**
+#### **3.4 reset server**
 ![reset](https://github.com/user-attachments/assets/cda771fa-e070-486c-9de4-6611af1adf75)
 
 after reset, the iso is loaded in server and one simiple redhat OS is available, and it will trigger the connection to redhat assisted installer.
@@ -170,17 +170,17 @@ after reset, the iso is loaded in server and one simiple redhat OS is available,
 
 
 
-## **4. openshift container platform installation**
-### **4.1 host is detected from redhat console GUI**
+### **4. openshift container platform installation**
+#### **4.1 host is detected from redhat console GUI**
 if no abnormal occurred, it automatcially detect the host from redhat console GUI
 
-### **4.2 install OCP**
+#### **4.2 install OCP**
 Click "install" button in redhat console GUI to start the OCP installation if 4.1 is passed.
 
 After OCP installation is completed, download the kubeconfig file and also credentials for the console access.
 
 
-## **5. openshift container platform postconfiguration**
+### **5. openshift container platform postconfiguration**
 a. performance profile.
    operformance profile is used to adjust the CPU, memory, hugepage configuration. note: configuration are specfic to the CPU models and server itself. e.g X86 and ARM are different. two different types examples are attached.
 
