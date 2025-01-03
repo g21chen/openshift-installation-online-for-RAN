@@ -1,0 +1,37 @@
+apiVersion: performance.openshift.io/v2
+kind: PerformanceProfile
+metadata:
+  annotations:
+    kubeletconfig.experimental: |
+      {"allowedUnsafeSysctls":["net.core.somaxconn","kernel.msg*","net.ipv6.conf.all.accept_ra","net.ipv6.conf.default.accept_ra","net.ipv6.conf.all.disable_ipv6","net.ipv4.conf.default.disable_policy","net.ipv4.conf.all.disable_policy","net.ipv6.conf.default.disable_policy","net.ipv6.conf.all.disable_policy","net.ipv4.conf.default.rp_filter","net.ipv4.conf.all.rp_filter","net.ipv4.ip_local_reserved_ports","net.ipv4.conf.all.forwarding","net.ipv4.conf.default.forwarding","net.ipv6.conf.all.forwarding","net.ipv6.conf.default.forwarding"],"systemReserved":{"memory": "500Mi"},"kubeReserved":{"memory": "500Mi"}}
+  name: master-profile
+spec:
+  additionalKernelArgs:
+  - nmi_watchdog=0
+  - audit=1
+  - mce=off
+  - processor.max_cstate=1
+  - intel_idle.max_cstate=0
+  - rcupdate.rcu_normal_after_boot=0
+  - iommu=pt
+  - intel_iommu=on
+  - module_blacklist=irdma
+  cpu:
+    isolated: 4-63
+    reserved: 0-3
+  globallyDisableIrqLoadBalancing: false
+  hugepages:
+    defaultHugepagesSize: 1G
+    pages:
+    - count: 30
+      size: 1G
+  machineConfigPoolSelector:
+    pools.operator.machineconfiguration.openshift.io/master: ""
+  nodeSelector:
+    node-role.kubernetes.io/master: ""
+  numa:
+    topologyPolicy: none
+status:
+  conditions:
+  runtimeClass: performance-master-profile
+  tuned: openshift-cluster-node-tuning-operator/openshift-node-performance-master-profile
