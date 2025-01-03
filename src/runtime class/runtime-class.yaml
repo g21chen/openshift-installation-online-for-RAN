@@ -1,0 +1,11 @@
+apiVersion: node.k8s.io/v1
+handler: high-performance
+kind: RuntimeClass
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"node.k8s.io/v1","handler":"high-performance","kind":"RuntimeClass","metadata":{"annotations":{},"creationTimestamp":"2023-09-28T17:21:27Z","name":"test-performance","resourceVersion":"46454","uid":"f7dc8f1e-1185-43ac-b91d-f2804a9051e7"}}
+  creationTimestamp: "2024-07-05T20:36:30Z"
+  name: test-performance
+  resourceVersion: "459851"
+  uid: cb5c5324-7fd5-46dd-8504-96765abe5bb6
