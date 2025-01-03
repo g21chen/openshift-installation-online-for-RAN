@@ -1,5 +1,5 @@
 # Table of Contents
-- [Descriptions](Descriptions)
+- [Descriptions](#Descriptions)
 - [Preconditions](Preconditions)
 - [Hardware](#Hardware)
 - [Others](#Others)
@@ -19,7 +19,7 @@
 - [4.2 install OCP](##4.2 install OCP)
 - [5. openshift container platform postconfiguration](#5. openshift container platform postconfiguration)
 
-# **Descriptions**
+## **Descriptions**
 The purpose of this repsosity is to specify the openshift installation online and also the operators configuration.  Note: all vendor specific information and configuration will be hidden due to license/privacy rule. 
 The redhat document provide the full installation guide as well. this repository focus on only necessary steps for the beginners. 
 
