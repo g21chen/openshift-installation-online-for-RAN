@@ -1,0 +1,88 @@
+# Logs and debug files
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+node_modules/
+bower_components/
+
+# Build directories
+dist/
+build/
+out/
+tmp/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Python files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.venv/
+*.pytest_cache/
+
+# Java files
+*.class
+*.jar
+*.war
+*.ear
+target/
+.idea/
+
+# JavaScript/TypeScript
+*.tsbuildinfo
+
+# IDE and editor settings
+.vscode/
+*.code-workspace
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*.bak
+
+# macOS files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Backup files
+*.bak
+*.orig
+*.tmp
+*.old
+
+# Image editing files
+*.psd
+*.xcf
+
+# Archive files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Ignore secrets and private keys
+*.pem
+*.key
+*.crt
+*.pfx
