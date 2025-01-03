@@ -2,10 +2,10 @@
 - [Descriptions](#Descriptions)
 - [Preconditions](#Preconditions)
 - [Hardware](#Hardware)
-- [Others](##Others)
+- [Others](#Others)
 - [Installation steps](Installation-steps)
-- [1. BIOS configuration](#1. BIOS configuration)
-- [2. Generate redhat discovery ISO file](#2. Generate redhat discovery ISO file)
+- [1 BIOS configuration](#1-BIOS-configuration)
+- [2 Generate redhat discovery ISO file](#2-Generate redhat discovery ISO file)
 - [2.1 preparing for the following configuration information](##2.1 preparing for the following configuration information)
 - [2.2 precheck the condition for openshift container platform installtion](##2.2 precheck the condition for openshift container platform installtion)
 - [2.3 Generate the ISO image with paramters configuration](##2.3 Generate the ISO image with paramters configuration)
@@ -33,8 +33,8 @@ The redhat document provide the full installation guide as well. this repository
       1. Internet access via proxy
       2. redhat account
       
-# **Installation steps**
-  ## **1. BIOS configuration**
+## **Installation steps**
+  ### **1 BIOS configuration**
     a. By default, the virtuallation and SR-IOV functionality are not enabled in BIOS. if those are required for the applications on top of Openshift Container Platform, those need to be enabled in BIOS configuration.
     b. For the Nvidia or supermicro server with DPU, diable the DPU in case the NIC card is used as common NIC card e.g SR-IOV functionality. see figure 1
     
@@ -42,8 +42,8 @@ Figure 1: disable DPU for supermicro/nvidia server with DPU NIC card e.g bluefie
 ![DPU-disabled](https://github.com/user-attachments/assets/c3169f85-9515-4012-8e8e-0736d51ff291)
 
 
-  ## **2. Generate redhat discovery ISO file**
-  ### **2.1 preparing for the following configuration information**
+  ### **2 Generate redhat discovery ISO file**
+  #### **2.1 preparing for the following configuration information**
       the following information are required as input to install openshift container platform later.
       a. Network configuration 
          - MAC address of target server for infra network
@@ -75,7 +75,7 @@ Figure 1: disable DPU for supermicro/nvidia server with DPU NIC card e.g bluefie
           after the command execution, One pair of keys are generated, private key: id_rsa and public key: id_rsa.pub
           later the public key need to be provided as input to generate iso file
 
-  ### **2.2 precheck the condition for openshift container platform installtion**
+  #### **2.2 precheck the condition for openshift container platform installtion**
        a. Network
           - ping BMC network reachable.  later the generated iso image need to be mannually mounted to target server via access the BMC network
           - green light on NIC port used for infra network. or check the link status is "UP" from BMC Webgui  or check the link status on switch port connected to target server for infrastruture network
@@ -113,7 +113,7 @@ Figure 1: disable DPU for supermicro/nvidia server with DPU NIC card e.g bluefie
        d. NTP server
           ping IP is reachable
 
-### **2.3 Generate the ISO image with paramters configuration**
+#### **2.3 Generate the ISO image with paramters configuration**
    
    a. login the https://console.redhat.com/openshift/cluster-list.
    
