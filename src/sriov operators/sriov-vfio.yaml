@@ -1,0 +1,19 @@
+apiVersion: sriovnetwork.openshift.io/v1
+kind: SriovNetworkNodePolicy
+metadata:
+  generation: 1
+  name: sriov-vfio-cfg
+  namespace: openshift-sriov-network-operator
+spec:
+  deviceType: vfio-pci
+  isRdma: false
+  mtu: 9000
+  needVhostNet: true
+  nicSelector:
+    pfNames:
+    - ens14f1#20-39
+  nodeSelector:
+    feature.node.kubernetes.io/network-sriov.capable: "true"
+  numVfs: 40
+  priority: 50
+  resourceName: sriov_vfio_cfg
