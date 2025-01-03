@@ -3,7 +3,7 @@ Install the openshift online
 
 # Table of Contents
 - [Descriptions](Descriptions)
-- [Preconditions](sPreconditions)
+- [Preconditions](Preconditions)
 - [Hardware](#Hardware)
 - [Others](#Others)
 - [Installation steps](Installation-steps)
