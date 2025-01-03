@@ -1,6 +1,3 @@
-# openshift-installation-online-for-RAN
-Install the openshift online
-
 # Table of Contents
 - [Descriptions](Descriptions)
 - [Preconditions](Preconditions)
