@@ -1,8 +1,8 @@
 # Table of Contents
 - [Descriptions](#Descriptions)
 - [Preconditions](#Preconditions)
-- [Hardware](#Hardware)
-- [Others](#Others)
+- [Hardware](##Hardware)
+- [Others](##Others)
 - [Installation steps](Installation-steps)
 - [1. BIOS configuration](#1. BIOS configuration)
 - [2. Generate redhat discovery ISO file](#2. Generate redhat discovery ISO file)
@@ -25,11 +25,11 @@ The redhat document provide the full installation guide as well. this repository
 
 
 ## **Preconditions**
-  ## **Hardware** 
+  ### **Hardware** 
       1. target HPE DL110 or Dell server or Supermicro or Nvidia server (X86 or ARM CPU model)
       2. Jump server (optional)
 
-  ## **Others**
+  ### **Others**
       1. Internet access via proxy
       2. redhat account
       
