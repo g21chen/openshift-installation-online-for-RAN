@@ -1,0 +1,13 @@
+apiVersion: imageregistry.operator.openshift.io/v1
+kind: Config
+metadata:
+  name: cluster
+spec:
+  defaultRoute: true
+  managementState: Managed
+  replicas: 1
+  rolloutStrategy: Recreate
+  storage:
+    pvc:
+      claim: test-registry
+
