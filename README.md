@@ -1,6 +1,6 @@
 # Table of Contents
 - [Descriptions](#Descriptions)
-- [Preconditions](Preconditions)
+- [Preconditions](#Preconditions)
 - [Hardware](#Hardware)
 - [Others](#Others)
 - [Installation steps](Installation-steps)
@@ -24,7 +24,7 @@ The purpose of this repsosity is to specify the openshift installation online an
 The redhat document provide the full installation guide as well. this repository focus on only necessary steps for the beginners. 
 
 
-# **Preconditions**
+## **Preconditions**
   ## **Hardware** 
       1. target HPE DL110 or Dell server or Supermicro or Nvidia server (X86 or ARM CPU model)
       2. Jump server (optional)
