@@ -18,6 +18,7 @@
     - [4.1 host is detected from redhat console GUI](#41-host-is-detected-from-redhat-console-GUI)
     - [4.2 install OCP](#42-install-OCP)
   - [5. openshift container platform postconfiguration](#5-openshift-container-platform-postconfiguration)
+  - [6. Reference](#6-reference)
 
 ## **Descriptions**
 The purpose of this repsosity is to specify the openshift installation online and also the operators configuration.  Note: all vendor specific information and configuration will be hidden due to license/privacy rule. 
@@ -210,7 +211,8 @@ k. nfd opreator
 l. Nvidia-gpu operators
 
 
-
+## **6 Reference**
+1. https://docs.openshift.com/container-platform/4.16/installing/overview/index.html
       
 
    
