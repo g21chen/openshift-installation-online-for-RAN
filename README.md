@@ -39,7 +39,7 @@ The redhat document provide the full installation guide as well. this repository
     a. By default, the virtuallation and SR-IOV functionality are not enabled in BIOS. if those are required for the applications on top of Openshift Container Platform, those need to be enabled in BIOS configuration.
     b. For the Nvidia or supermicro server with DPU, diable the DPU in case the NIC card is used as common NIC card e.g SR-IOV functionality. see figure 1
     
-Figure 1: disable DPU for supermicro/nvidia server with DPU NIC card e.g bluefield NIC 
+Figure 1: disable DPU in supermicro/nvidia server with DPU NIC card e.g bluefield NIC 
 ![DPU-disabled](https://github.com/user-attachments/assets/c3169f85-9515-4012-8e8e-0736d51ff291)
 
 
