@@ -1,7 +1,7 @@
 # Table of Contents
 - [Descriptions](#Descriptions)
 - [Preconditions](#Preconditions)
-- [Hardware](##Hardware)
+- [Hardware](#Hardware)
 - [Others](##Others)
 - [Installation steps](Installation-steps)
 - [1. BIOS configuration](#1. BIOS configuration)
