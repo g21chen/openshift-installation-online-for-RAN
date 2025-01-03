@@ -5,7 +5,7 @@
   - [Others](#Others)
 - [Installation steps](#Installation-steps)
   - [1 BIOS configuration](#1-BIOS-configuration)
-  - [2 Generate redhat discovery ISO file](#2-Generate redhat discovery ISO file)
+  - [2 Generate redhat discovery ISO file](#2-Generate-redhat-discovery-ISO-file)
     - [2.1 preparing for the following configuration information](#2.1-preparing-for-the-following-configuration-information)
     - [2.2 precheck the condition for openshift container platform installtion](#2.2-precheck-the-condition-for-openshift-container-platform-installtion)
     - [2.3 Generate the ISO image with paramters configuration](#2.3-Generate-the-ISO-image-with-paramters-configuration)
