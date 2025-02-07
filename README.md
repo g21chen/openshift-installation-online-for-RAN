@@ -209,6 +209,8 @@ i.sriov operators
 j. ptp sync operator
 
 k. nfd opreator
+![image](https://github.com/user-attachments/assets/091e26d7-017f-4598-8a73-eb8f6bd04f37)
+
 
 l. Nvidia-gpu operators
 ![image](https://github.com/user-attachments/assets/331a9797-f871-4104-a12e-21f49243db8b)
