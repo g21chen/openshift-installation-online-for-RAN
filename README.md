@@ -178,6 +178,7 @@ if no abnormal occurred, it automatcially detect the host from redhat console GU
 #### **4.2 install OCP**
 Click "install" button in redhat console GUI to start the OCP installation if 4.1 is passed.
 
+
 After OCP installation is completed, download the kubeconfig file and also credentials for the console access.
 
 
@@ -210,6 +211,7 @@ j. ptp sync operator
 k. nfd opreator
 
 l. Nvidia-gpu operators
+![image](https://github.com/user-attachments/assets/331a9797-f871-4104-a12e-21f49243db8b)
 
 
 ## **6 Reference**
